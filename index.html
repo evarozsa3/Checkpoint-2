@@ -27,36 +27,52 @@
           <div class="br col-12">
           </div>
           <div class="col-6">
-            <button class="mt-1">
+            <button class="mt-1 bg-success" onclick="upgrade('1')">
               APPLE
             </button>
+            <h5 id="applePrice">$50</h5>
           </div>
           <div class="col-6">
-            <button class="mt-1">
+            <button class="mt-1" onclick="upgrade('3')">
               FARM
             </button>
+            <h5 id="farmPrice">$20</h5>
           </div>
           <div class="col-6">
-            <button class="">
+            <button onclick="upgrade('2')" class="bg-success">
               CORN
             </button>
+            <h5 id="cornPrice">$100</h5>
           </div>
           <div class="col-6">
-            <button class="text-right">
+            <button onclick="">
               CLEAVER
             </button>
+            $500
           </div>
 
         </div>
       </div>
     </div>
+
     <div class="row mt-5">
       <div class="col-5 offset-3 pt-4">
         <img src="https://webstockreview.net/images/clipart-grass-mud-3.png" class="mud" alt="">
         <img src="https://www.pngkey.com/png/full/109-1092140_porker-pig-fat-pig-cartoon.png" onclick="clicks('1')"
           class="porky" alt=""></i>
       </div>
-
+    </div>
+    <div class="row">
+      <div class="col-10">
+        <div class="row  stats">
+          <div class="col-12">
+            <h4>BPS:<span id="baconPerSec">0</span></h4>
+          </div>
+          <div class="col-12">
+            <h4>TBM:<span id="baconMult">1</span></h4>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-10 text-center">
@@ -65,11 +81,11 @@
           <div class="br"></div>
           <h3 class="mb-3 mt-3"> BACON: <span id="clicks">0</span></h3>
           <div class="br"></div>
-          <h4 class="mb-3 mt-3">APPLES: <span>0</span></h4>
+          <h4 class="mb-3 mt-3">APPLES: <span id="myApple">0</span></h4>
           <div class="br"></div>
-          <h4 class="mb-3 mt-3">CORN: <span>0</span></h4>
+          <h4 class="mb-3 mt-3">CORN: <span id="myCorn">0</span></h4>
           <div class="br"></div>
-          <h4 class="mb-3 mt-3">FARM:<span>0</span></h4>
+          <h4 class="mb-3 mt-3">FARM:<span id="myFarm">0</span></h4>
           <div class="br"></div>
           <h4 class="mb-3 mt-3">CLEAVER: <span>0</span></h4>
         </div>
