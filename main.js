@@ -7,11 +7,11 @@ let porky = {
 
 let clickUpgrade = {
   apple: {
-    price: 5,
+    price: 50,
     quantity: 0
   },
   corn: {
-    price: 10,
+    price: 100,
     quantity: 0
   }
 }
@@ -19,7 +19,7 @@ let clickUpgrade = {
 
 let automaticUpgrade = {
   farm: {
-    price: 20,
+    price: 200,
     quantity: 0
   },
   cleaver: {
@@ -45,21 +45,21 @@ function upgrade(increase) {
     porky.multiplier++
     clickUpgrade.apple.quantity++;
     porky.clicks -= clickUpgrade.apple.price;
-    clickUpgrade.apple.price += 5;
+    clickUpgrade.apple.price += 50;
     drawPage();
   }
   else if (increase == 2 && porky.clicks >= clickUpgrade.corn.price) {
     porky.multiplier += 2
     clickUpgrade.corn.quantity++
     porky.clicks -= clickUpgrade.corn.price
-    clickUpgrade.corn.price += 10
+    clickUpgrade.corn.price += 50
     drawPage();
   }
   else if (increase == 3 && porky.clicks >= automaticUpgrade.farm.price) {
     porky.autoMultiplier += .3334
     automaticUpgrade.farm.quantity++
     porky.clicks -= automaticUpgrade.farm.price
-    automaticUpgrade.farm.price += 20
+    automaticUpgrade.farm.price += 100
     drawPage();
     startInterval();
   }

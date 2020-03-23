@@ -5,6 +5,13 @@ body{
   height: 250px;
 
 }
+.title{
+  font-family: serif;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: -1px 0 rgb(228, 19, 19), 0 1px rgb(90, 9, 9), 1px 0 rgb(211, 13, 13), 0 -1px black;
+
+}
 .porky{
   height: 350px;
   width: 350px;
@@ -30,6 +37,9 @@ margin-top: 18vh;
 margin-left:70vw;
 background-color: rgba(190, 226, 156, 0.815);
 font-family: serif;
+z-index: 1;
+position: fixed;
+ box-shadow: 1px 1px 15px black, 0 0 25px rgb(48, 29, 2), 0 0 5px rgb(90, 40, 21);
 }
 
 .br{
@@ -45,6 +55,7 @@ font-family: serif;
  background-color: rgba(190, 226, 156, 0.596);
 font-family: serif;
    z-index: 1;
+     box-shadow: 1px 1px 15px black, 0 0 25px rgb(127, 127, 223), 0 0 5px rgb(13, 221, 211);
   
  
 }
@@ -58,4 +69,13 @@ font-family: serif;
  background-color: rgba(190, 226, 156, 0.596);
 font-family: serif;
    z-index: 1;
+    box-shadow: 1px 1px 15px black, 0 0 25px rgb(245, 201, 5), 0 0 5px rgb(247, 243, 6);
+}
+.market{
+  font-weight: bolder;
+  font-style: initial;
+}
+.stashtitle{
+font-weight: bolder;
+  font-style: initial;
 }
